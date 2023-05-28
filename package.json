@@ -50,5 +50,9 @@
         "tsdx": "^0.14.1",
         "tslib": "^2.5.2",
         "typescript": "^3.9.10"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     }
 }
