@@ -30,7 +30,7 @@
         "singleQuote": true,
         "trailingComma": "es5"
     },
-    "name": "web-clock",
+    "name": "@mailzwj/web-clock",
     "author": "mailzwj",
     "module": "dist/web-clock.esm.js",
     "size-limit": [
