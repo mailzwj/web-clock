@@ -7,11 +7,18 @@
     <title>Web Clock</title>
     <script src="./dist/webclock.umd.development.js"></script>
 </head>
-<body style="display: flex; align-items: center; justify-content: center; height: 100%;">
+<body>
+    <h2>apple-dark</h2>
     <canvas id="web-clock"></canvas>
+    <h2>apple-light</h2>
+    <canvas id="web-clock-light" style="padding: 10px;background-color: #ddd;"></canvas>
 <script>
 (() => {
     const clock = new WebClock.default('web-clock', {
+        showNumber: true
+    });
+    const clock1 = new WebClock.default('web-clock-light', {
+        theme: 'apple-light',
         width: 480,
         height: 480,
         dpi: devicePixelRatio || 2,

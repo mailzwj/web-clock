@@ -174,10 +174,10 @@ export default class WebClock {
 
   afId: any;
 
-  constructor(canvas: string | HTMLCanvasElement, option: IClock.IOption = defaultOption) {
+  constructor(canvas: string | HTMLCanvasElement, option: IClock.IOption = {}) {
     this.cvs = initCanvas(canvas) as HTMLCanvasElement;
 
-    this.option = option;
+    this.option = { ...defaultOption, ...option };
 
     this.draw();
   }
