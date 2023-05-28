@@ -1,6 +1,7 @@
 # web-clock
 
 ## 使用示例
+* umd script方式
 ```js
 <canvas id="web-clock"></canvas>
 <script src="./dist/webclock.umd.production.min.js"></script>
@@ -14,6 +15,12 @@
   });
 })();
 </script>
+```
+* ES Module
+```js
+import WebClock from '@mailzwj/web-clock';
+
+// ...
 ```
 
 ## 参数说明
