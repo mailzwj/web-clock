@@ -10,8 +10,48 @@
 <body>
     <h2>apple-dark</h2>
     <canvas id="web-clock"></canvas>
+    <pre>
+<code>
+const clock = new WebClock.default('web-clock', {
+    showNumber: true
+});
+</code>
+    </pre>
     <h2>apple-light</h2>
     <canvas id="web-clock-light" style="padding: 10px;background-color: #ddd;"></canvas>
+    <pre>
+<code>
+const clock1 = new WebClock.default('web-clock-light', {
+    theme: 'apple-light',
+    width: 480,
+    height: 480,
+    dpi: devicePixelRatio || 2,
+    showNumber: true
+});
+</code>
+    </pre>
+    <h2>mi</h2>
+    <canvas id="web-clock-mi"></canvas>
+    <pre>
+<code>
+const clock2 = new WebClock.default('web-clock-mi', {
+    theme: 'mi'
+});
+</code>
+    </pre>
+    <h2>User theme</h2>
+    <canvas id="web-clock-user"></canvas>
+    <pre>
+<code>
+const clock3 = new WebClock.default('web-clock-user', {
+    theme: 'mi',
+    userTheme: {
+        backgroundColor: '#dc0119',
+        milliPointerColor: '#dc0119'
+    }
+});
+</code>
+    </pre>
 <script>
 (() => {
     const clock = new WebClock.default('web-clock', {
@@ -23,6 +63,16 @@
         height: 480,
         dpi: devicePixelRatio || 2,
         showNumber: true
+    });
+    const clock2 = new WebClock.default('web-clock-mi', {
+        theme: 'mi'
+    });
+    const clock3 = new WebClock.default('web-clock-user', {
+        theme: 'mi',
+        userTheme: {
+            backgroundColor: '#dc0119',
+            milliPointerColor: '#dc0119'
+        }
     });
 })();
 </script>

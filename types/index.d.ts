@@ -5,6 +5,7 @@ declare namespace IClock {
     height?: number;
     dpi?: number;
     showNumber?: boolean;
+    userTheme?: IUserTheme;
   };
 
   type IColor = string | CanvasGradient | CanvasPattern;
@@ -26,4 +27,6 @@ declare namespace IClock {
     milliPointerColor: IColor;
     centerCircleColor: IColor;
   };
+
+  type IUserTheme = Partial<ITheme>;
 }
