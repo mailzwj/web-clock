@@ -55,7 +55,7 @@ Partial<{
   centerCircleColor: IColor;
 }>;
 ```
-**注意：**未指定参数将继承`theme`主题的配置。
+**注意：** 未指定参数将继承`theme`主题的配置。
 
 ## 在线DEMO
 * [Web Clock](https://mailzwj.github.io/web-clock/example.html)
